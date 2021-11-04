@@ -25,12 +25,12 @@ int main(int argc, char const *argv[])
 		return 0;
 	}
 
-	if ((fdin = open (argv[1], O_RDONLY)) == 0 )
+	if ((fdin = open (argv[1], O_RDONLY)) == -1 )
 	{
 		printf ("I can't open %s file\n", argv[1]);
 		return 0;
 	}
-	if ((fdout = open (argv[2], O_RDWR|O_CREAT|O_TRUNC, 0666)) == 0 )
+	if ((fdout = open (argv[2], O_RDWR|O_CREAT|O_TRUNC, 0666)) == -1 )
 	{
 		printf ("I can't open or create %s file\n", argv[2]);
 		return 0;
