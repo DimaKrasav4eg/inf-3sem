@@ -1,0 +1,21 @@
+3. -Wall       all warning
+   -Werror     warning is error
+   -O0         выкл оптимиз (уровень оптимизации 0-3)
+
+4. GDB         gdb --args ./a.out first second
+
+               breakpoint  (b): 
+                                  1. адрес
+                                  2. функция
+                                  3. <file>  <>
+               into b             - показать breakpoint
+               delite b (d b)     - удалить b
+               step n (s n)       - шаг в n строк
+               next               - шаг никуда незаходя
+               print i (p i)      - печать i 
+               display i          - печать i каждое действие
+               ptype a            - печать тип а
+               backtrace t        - 
+               jump j             - прыжок на j (все ломает)
+               finish             - доходит до конца текущей функции
+               set variable j = 0 - 
